@@ -92,6 +92,12 @@ body{
     width: 200px;
     letter-spacing: 5px;
 }
+.wrapper-2 > button:hover{
+    letter-spacing: 0px;
+    color: var(--Soft-orange);
+    background-color: var(--Very-dark-blue);
+    cursor: pointer;
+}
 /* left card  */
 .img-3{
     background-color: var(--Very-dark-blue);
@@ -151,7 +157,7 @@ h2{
 .img > .img-mobile{
     display: none;
 }
-#close{
+.header{
     display: none;
 }
 /* 1025px  */
@@ -284,9 +290,9 @@ h2{
         display: none;
         position: fixed;
         background-color: var(--Off-white);
-        /* top: 0; */
-        right: 10;
-                margin-left: 50px;
+        top: 0;
+        right: 0;
+                /* margin-left: 100px; */
                 
         width: 100%;
         height: 100%;
@@ -294,18 +300,32 @@ h2{
         flex-direction: column;
         z-index: 1000;
         
-        font-size: 40px;
+        
     }
     .under > li{
+        font-size: 40px;
         color: var(--Very-dark-blue);
-        padding-top: 50px;
-        padding-right: 300px;
+        padding-top: 30px;
+        padding-left: 10px;
+    }
+    .under > .header{
+        display: flex;
+        /* justify-content: space-between; */
+        gap: 300px;
+    }
+    .header > #close:hover{
+        cursor: pointer;
+        transform: translateY(5px);
     }
    
     .burger{
         display: flex;
-       
     }
+    .burger:hover{
+        cursor: pointer;
+        transform: translateY(5px);
+    }
+
 }
 /* mobile  */
 @media screen and (max-width: 375px){
